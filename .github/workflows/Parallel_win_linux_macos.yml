@@ -22,5 +22,5 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 14
-      - run: npm install && npm cypress run --browser chrome configFile=qa --record --parallel --key ${{ secrets.REC_KEY }}
+          node-version: 12
+      - run: npm i cypress@9.7.0 && npm install && npm cypress run --browser chrome configFile=qa --record --parallel --key ${{ secrets.REC_KEY }}
