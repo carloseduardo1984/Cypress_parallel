@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm npx cypress@9.7.0 run --browser=chrome 
+      - run: npx cypress@9.7.0 run --browser=chrome 
         env:          
            CYPRESS_RECORD_KEY: ${{ secrets.REC_KEY }}
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
