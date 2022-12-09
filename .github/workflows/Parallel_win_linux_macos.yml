@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: 12
       - run: npm install 
-      - run: npx cypress@9.7.0 run --browser=chrome configFile=qa --record --parallel --key ${{ secrets.REC_KEY }}
+      - run: npm test
