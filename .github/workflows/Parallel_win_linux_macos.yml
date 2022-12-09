@@ -25,4 +25,4 @@ jobs:
           node-version: 16
       - run: npm i cypress@9.7.0 && npm install
 #       - run: npm test   
-      - run: npm ${{ secrets.RUN_COMMAND }}
+      - run: npm cypress run --browser chrome configFile=qa --record --parallel --key ${{ secrets.REC_KEY }}
