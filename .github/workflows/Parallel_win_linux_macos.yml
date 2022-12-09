@@ -23,6 +23,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm i cypress@9.7.0 && npm install && ${{ secrets.RUN_COMMAND }}   
+      - run: npm i cypress@9.7.0 && npm install && npm ${{ secrets.RUN_COMMAND }}   
         env:                 
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
