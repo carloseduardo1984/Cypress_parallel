@@ -24,5 +24,3 @@ jobs:
         with:
           node-version: 16
       - run: npm i cypress@9.7.0 && npm install && ${{ secrets.RUN_COMMAND }}   
-        env:                 
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
