@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "test": "cypress run --browser chrome configFile=qa --record --parallel --key 76baa142-2ca1-4df4-8854-5cb63632115b"
+        "test": "cypress run --browser chrome configFile=qa --record --parallel --key ${{ secrets.REC_KEY }}"
     },
     "cypress-cucumber-preprocessor": {
         "step_definitions": "cypress/support/steps"
