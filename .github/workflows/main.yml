@@ -21,6 +21,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "16"
-      - run: npm i cypress@9.7.0 && npm install && npm test
+      - run: npm i cypress@9.7.0 && npm install && ${{ secrets.RUN_COMMAND }}
       
        
