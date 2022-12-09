@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: 16
       - run: npm i cypress@9.7.0 && npm install
-      - run: npm ${{ secrets.RUN_COMMAND }}   
+      - run: npm test   
