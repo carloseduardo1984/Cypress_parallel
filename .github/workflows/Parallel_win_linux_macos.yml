@@ -23,5 +23,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 12
-      - run: npm i cypress@9.7.0 && npm install 
+      - run: npm install 
       - run: npx cypress@9.7.0 run --browser=chrome configFile=qa --record --parallel --key ${{ secrets.REC_KEY }}
